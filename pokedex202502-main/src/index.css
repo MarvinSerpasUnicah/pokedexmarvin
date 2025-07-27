@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+html{
+    width:100%;
+    height:100%;
+}
+
+body{
+    min-height: 100vh;
+    @apply flex flex-col;
+}
+
+body #root{
+    @apply flex flex-col flex-1 shrink-0 min-h-full;
+}
+
+h1 {
+    @apply text-xl font-bold;
+}
+
+header {
+    @apply flex justify-between items-center px-4 py-2 shadow;
+}
+
+header nav ul {
+    @apply flex  gap-2;
+}
+
+header nav ul li a {
+    @apply inline-block px-2 py-1.5 shadow border border-b-blue-700;
+}
+
+main {
+    @apply flex-1;
+}
+
+footer {
+    @apply bg-blue-700 text-white text-center px-2 py-4;
+}
+
+.container {
+    @apply w-full px-2 md:max-w-[1025px] md:mx-auto;
+}
+
+.half-panel {
+    @apply w-full flex flex-row;
+}
+.half-panel.inverted {
+    @apply md:flex-row-reverse;
+}
+.half-panel section {
+    @apply flex-1 w-full md:w-1/2;
+}
